@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const rangeInput = document.querySelector('input[type="range"]');
+  const rangeInput = document.querySelector('input[name="progress"]');
   const sliderValue = document.querySelector('.slider-value');
 
   rangeInput.addEventListener('input', function () {

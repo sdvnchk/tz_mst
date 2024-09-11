@@ -103,36 +103,42 @@
         <!-- Форма заказа -->
         <form class="order-form">
           <div class="form-group">
-            <select name="payment">
-              <option>Выберите тип системы</option>
-              <option>Qiwi Wallet</option>
-              <option>Yandex Money</option>
-              <option>Web Money</option>
+            <select name="payment" required>
+              <option value="">Выберите тип системы</option>
+              <option value="qiwi">Qiwi Wallet</option>
+              <option value="yandex">Yandex Money</option>
+              <option value="webmoney">Web Money</option>
             </select>
           </div>
+
           <div class="form-group">
-            <input type="email" placeholder="Ваш e-mail" required>
+            <input type="email" name="email" placeholder="Ваш e-mail" required>
           </div>
+
           <div class="form-group">
-            <input type="text" placeholder="Ваше имя" required>
+            <input type="text" name="name" placeholder="Ваше имя" required>
           </div>
+
           <div class="form-group form-slider">
             <div class="slider-text-wrapper">
               <span class="slider-text">Статус готовности вашего проекта</span>
               <span class="slider-value">75%</span>
             </div>
-            <input type="range" min="0" max="100" value="75">
+            <input type="range" name="progress" min="0" max="100" value="75">
           </div>
+
           <div class="form-group form-file">
             <label for="file-upload" class="file-label">
-              <input type="file" id="file-upload">
+              <input type="file" id="file-upload" name="file">
               <span>Прикрепить файл</span>
             </label>
           </div>
+
           <div class="form-group full-width">
             <button class="button button-submit" type="submit">Отправить</button>
           </div>
         </form>
+
       </section>
 
       <!-- Футер -->
